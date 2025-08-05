@@ -1,0 +1,217 @@
+
+
+.paginationNew {
+    text-align:center;
+    color:#829994;
+}
+.paginationNew li {
+    display:inline;
+    padding:0 3px;
+}
+.paginationNew a.rpage {
+    color:#0d7963;
+    display:inline-block;
+    padding:5px 10px;
+    border:1px solid #cde0dc;
+    text-decoration:none;
+	margin:0px 4px;
+}
+.paginationNew a.rpage:hover
+{
+	 background-color: #ddd;
+	}
+
+	
+.paginationNew a.current {
+	  color:#0d7963;
+    display:inline-block;
+    padding:5px 10px;
+    border:1px solid #cde0dc;
+    text-decoration:none;
+	margin:0px 4px;
+   background-color: #EAEAEA;
+    color:#333;
+}
+
+.paginationNew a.active {
+
+   background-color: #EAEAEA;
+    color:#333;
+}
+
+.row{
+	margin-left:20%
+	}
+.errmsg{
+	font-size: initial;
+	background-color:#efe58d7d;
+	width:70%;
+	}
+
+#headerSortUp {
+	background-repeat:no-repeat;
+	background-color: #f5f5f5;
+	background-position: right;
+}
+
+  #tableSearch {
+    display: table;
+    text-align: left;
+    width: 100%;
+	margin-left:1%;
+    border-collapse: separate;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	
+  }
+  
+  .theader {
+    display: table-row;
+  }
+  
+  
+  .table_header {
+    display: table-cell;
+	
+  }
+  
+  #table_addNew{
+	  border-right:hidden;
+	  border-left:hidden;
+	  border-bottom:hidden;
+	  }
+
+	.btnExport{
+		background-image:url(img/ExcelIcon.png);
+		background-size: contain;
+		background-repeat:no-repeat;
+		width:110%;
+    	height: 100%;
+		border-radius: 8px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+    	transition-duration: 0.4s;
+   		cursor: pointer;
+		border: 0px solid ;
+		}
+  
+  .btnExport:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+	width:115%;
+}
+  
+  .btnPDF{
+		background-image:url(img/pdf.png);
+		background-size: contain;
+		background-repeat:no-repeat;
+		width:110%;
+    	height: 100%;
+		border-radius: 8px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+    	transition-duration: 0.4s;
+   		cursor: pointer;
+		border: 0px solid ;
+		margin-bottom:2%;
+		}
+  
+  .btnPDF:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+	width:115%;
+}
+  
+.checkmark {
+   
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+}
+
+  
+    @media screen and (max-width: 768px) {
+.row{
+	margin-left:0%
+	}
+
+	}
+	
+   @media screen and (max-width: 900px) {
+     #tableSearch {
+      width: 90%
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    #tableSearch {
+      display: block;
+    }
+    
+    .table_header {
+    display: block;
+	}
+	
+	
+table { 
+    width: 80%; 
+    table-layout: fixed;
+    border-collapse: collapse; 
+    margin: 0 auto;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+    background: #f2f2f2; 
+}
+th { 
+    background: #E74C3C; 
+    color: #fff; 
+    font-weight: 600; 
+}
+td, th { 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+    text-align: center
+}
+	
+	/*phone view */
+	@media 
+only screen and 
+    (max-width: 760px){
+    td, tr { 
+        display: block !important; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute !important;
+		top: -9999px !important;
+		left: -9999px !important;
+	}
+	tr {
+        border: 1px solid #D3D3D3 !important;
+    }
+    tr + tr{
+        margin-top: 1.5em !important;
+    }
+	td { 
+		/* make like a "row" */
+		border: none !important;
+		border-bottom: 1px solid #eee !important;
+		position: relative !important;
+		padding-left: 40% !important;
+        background-color: #E8E8E8 !important;
+        text-align: left !important;
+	}
+	td:before { 
+        content: attr(data-label) !important;
+        display: inline-block !important;
+        line-height: 1.5 !important;
+	    margin-left: -65% !important;
+        width: 60% !important;
+		white-space: nowrap !important;
+	}
+}
+	
+	
